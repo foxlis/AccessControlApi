@@ -1,4 +1,4 @@
-package com.simple.restendpoint;
+package com.simple.service;
 
 import java.util.List;
 

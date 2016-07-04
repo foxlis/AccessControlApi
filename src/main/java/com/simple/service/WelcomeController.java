@@ -1,4 +1,4 @@
-package com.simple.restendpoint;
+package com.simple.service;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
