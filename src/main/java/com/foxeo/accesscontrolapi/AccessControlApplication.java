@@ -1,12 +1,13 @@
-package com.simple;
+package com.foxeo.accesscontrolapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class AccessControlApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(AccessControlApplication.class, args);
     }
+
 }
