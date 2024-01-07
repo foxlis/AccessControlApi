@@ -11,8 +11,8 @@
     <groupId>com.foxeo</groupId>
     <artifactId>access-control-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>access-control</name>
-    <description>access-control</description>
+    <name>access-control-api</name>
+    <description>access-control-api</description>
     <properties>
         <java.version>17</java.version>
         <integration-tests.sources>${project.basedir}/src/it/java</integration-tests.sources>

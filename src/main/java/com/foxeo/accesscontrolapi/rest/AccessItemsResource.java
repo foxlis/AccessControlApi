@@ -24,6 +24,12 @@ public class AccessItemsResource {
         return ResponseEntity.ok().body(response);
     }
 
+    @PostMapping("/")
+    public ResponseEntity<AccessItemResponse> addAccessItem(@RequestBody AccessItemRequest request) {
+        var response = AccessItemResponse.from(getAccessItems.addAccessItem(AccessItemRequest.toAccessItem(request)));
+        return ResponseEntity.ok().body(response);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<AccessItemResponse> getAccessItem(@PathVariable UUID id) {
         return getAccessItems.getAccessItem(id)
@@ -31,9 +37,8 @@ public class AccessItemsResource {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/")
-    public ResponseEntity<AccessItemResponse> addAccessItem(@RequestBody AccessItemRequest request) {
-        var response = AccessItemResponse.from(getAccessItems.addAccessItem(AccessItemRequest.toAccessItem(request)));
-        return ResponseEntity.ok().body(response);
+    @PutMapping("/{id}")
+    public ResponseEntity<AccessItemResponse> updateAccessItem(@PathVariable UUID id) {
+        return ResponseEntity.internalServerError().body(null);
     }
 }
